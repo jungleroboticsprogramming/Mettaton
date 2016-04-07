@@ -133,19 +133,19 @@ public class DriveTrain implements NeedsUpdating, ControllerDrivable, DampenedSt
 			//drive with sticks
 		} else {
 			double leftVal = controller.getAxisLY();
-	    	double rightVal = controller.getAxisRY();
+	    		double rightVal = controller.getAxisRY();
 	    	
-	    	//average the 2 values if within threshold of each other
-	    	if (Math.abs(leftVal - rightVal) <= straighteningThreshold) {
-		    	double average = (leftVal + rightVal) / 2;
-		    	leftVal = average;
-		    	rightVal = average;
-	    	}
+		    	//average the 2 values if within threshold of each other
+		    	if (Math.abs(leftVal - rightVal) <= straighteningThreshold) {
+			    	double average = (leftVal + rightVal) / 2;
+			    	leftVal = average;
+			    	rightVal = average;
+		    	}
 	
-	    	leftDampener.setTargetVal(getScaledValue(leftVal));
-	    	rightDampener.setTargetVal(getScaledValue(rightVal));
-    	}
-		
+		    	leftDampener.setTargetVal(getScaledValue(leftVal));
+		    	rightDampener.setTargetVal(getScaledValue(rightVal));
+	    	}
+			
 		applyDampenerValues();
 	}
 	
@@ -194,14 +194,14 @@ public class DriveTrain implements NeedsUpdating, ControllerDrivable, DampenedSt
 	protected double getScaledValue(double value) {
 		double scaled = Math.pow(value, inputScalar);
     	
-    	//if the scaled value is positive but the 
-    	//input is negative (from an even exponent), 
-    	//make negative
-    	if (scaled > 0 && value < 0) {
-    		scaled *= -1;
-    	}
-    	
-    	return scaled;
+	    	//if the scaled value is positive but the 
+	    	//input is negative (from an even exponent), 
+	    	//make negative
+	    	if (scaled > 0 && value < 0) {
+	    		scaled *= -1;
+	    	}
+	    	
+	    	return scaled;
 	}
 	
 	/**
