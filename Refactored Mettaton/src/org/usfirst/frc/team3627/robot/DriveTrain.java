@@ -108,7 +108,7 @@ public class DriveTrain implements NeedsUpdating, ControllerDrivable, DampenedSt
 			//drive by triggers: drive straight
 			double scaledTriggers = getScaledValue(triggers);
 			
-	    	leftDampener.setTargetVal(scaledTriggers);
+	    		leftDampener.setTargetVal(scaledTriggers);
 			rightDampener.setTargetVal(scaledTriggers);
 			
 			
@@ -205,7 +205,7 @@ public class DriveTrain implements NeedsUpdating, ControllerDrivable, DampenedSt
 	}
 	
 	/**
-	 * Steps the current speed of the winch closer to the target speed
+	 * Steps the motor speeds closer to the target speeds
 	 */
 	public void update() {
 		leftDampener.update();
