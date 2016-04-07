@@ -38,6 +38,11 @@ public class Winch implements NeedsUpdating, DampenedStoppable {
 		motorDampener = new Dampener(-1, 1, maxAcceleration);
 	}
 	
+	/**
+	 * Creates a new Winch, using another Winch as a template
+	 * 
+	 * @param other the winch to use as a template
+	 */
 	protected Winch(Winch other) {
 		motor = other.motor;
 		lowerLimit = other.lowerLimit;
@@ -45,6 +50,7 @@ public class Winch implements NeedsUpdating, DampenedStoppable {
 		speed = other.speed;
 		motorDampener = other.motorDampener;
 	}
+	
 	/**
 	 * Since winches can move faster downward than upward,
 	 * this method allows you to specify a multiplier for
