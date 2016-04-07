@@ -86,6 +86,4 @@ GLHF
  
 --Ryan Longood, Programming Captain 2016
  
-Feel free to contact me for any help you may need:
-longoodr@gmail.com
-(804) 840-7372
+Feel free to contact me for any help you may need. Email me at longoodr@gmail.com or text me at (804) 840-7372.
