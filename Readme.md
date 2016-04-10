@@ -1,3 +1,5 @@
+(The actual code is contained in Refactored Mettaton/src/org/usfirst/frc/team3627/robot)
+
 This is a robust object-oriented implementation of the code
 that drives Mettaton 2016. The classes here are designed so
 that they can be easily reused for years to come; hopefully,
