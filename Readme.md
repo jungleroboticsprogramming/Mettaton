@@ -34,4 +34,4 @@ Feel free to contact me for any help you may need. Email me at longoodr@gmail.co
 
 
 
-* No, really. Multiple times this build season, electrical team messed up and caused issues that took HOURS to fix, and nobody bat an eye. But when the code stopped working due to a single-line bug that could be fixed in 15 seconds, EVERYBODY LOST THEIR DAMN MINDS. It's like the old adage of IT: "Everything works, why am I paying you?"... "Nothing works, why am I paying you?"
+\* No, really. Multiple times this build season, electrical team messed up and caused issues that took HOURS to fix, and nobody bat an eye. But when the code stopped working due to a single-line bug that could be fixed in 15 seconds, EVERYBODY LOST THEIR DAMN MINDS. It's like the old adage of IT: "Everything works, why am I paying you?"... "Nothing works, why am I paying you?"
